@@ -3,6 +3,8 @@ import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import "./MapPage.css";
 import useGeolocation from 'react-hook-geolocation'
 
+
+
 export interface MapPageProps { }
 
 const MapPage = () => {
@@ -22,6 +24,8 @@ const MapPage = () => {
 
   return <div className='map'>
     {isLoaded ? (
+
+
       // tag da api do google maps
       <GoogleMap
         mapContainerStyle={{ width: '100%', height: '100%' }}
@@ -29,9 +33,11 @@ const MapPage = () => {
         zoom={19}
       >
         <Marker position={localization} />
-      </GoogleMap>
-    ) : <></>
 
+
+      </GoogleMap>
+    ) : <>
+    </>
     }
   </div>
 };
