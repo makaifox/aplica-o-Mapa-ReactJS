@@ -1,6 +1,10 @@
 .Mainbtn {
   background-color: #CA5501 !important ;
   border-color: #CA5501 ;
+  position: relative;
+   top: -8rem;
+   margin: 0 5rem;
+  border-radius: 1rem;
 }
 
 .gas {
